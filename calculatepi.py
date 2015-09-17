@@ -25,6 +25,4 @@ import math
 n = int(input("I will estimate Pi. How many terms should I use? "))
 decimals = int(input("How many decimal places should I use in the result? "))
 Pi = 4*sum([((-1)**k)/((2*k)+1) for k in range(0,n)])
-#Pi = [4*sum((-1**k)/(2*k+1)) for k in range(0,n)]
 print("The approximate value of Pi is {0:.{1}f}".format(Pi, decimals))
-print("(The true value of Pi is {0:.{1}f})".format(math.pi, decimals))
